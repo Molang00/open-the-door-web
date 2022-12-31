@@ -14,7 +14,13 @@ export const handleRequestedAction = (action) => {
   }
 };
 
+var lastRequestedTimestamp = Date.now();
+
 export const openTheDoor = () => {
+  if (lastRequestedTimestamp + 1000 >= Date.now()) return;
+
+  lastRequestedTimestamp = Date.now();
+
   console.log("Openning Request");
   fetch("http://192.168.35.99/?relay=on")
     .then((res) => {

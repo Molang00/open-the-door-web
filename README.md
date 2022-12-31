@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deploy scripts
+
+Following scripts for deployment to firebase hosting.
+
+### `npm run build`
+
+### `firebase deploy`
+
+If you want to know details, you can use following links :)
+
+- https://firebase.google.com/docs/hosting/quickstart?authuser=0&hl=ko
+
 ## Available Scripts
 
 In the project directory, you can run:
